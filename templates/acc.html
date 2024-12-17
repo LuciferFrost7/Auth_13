@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <title>Image Display</title>
+        <style>
+            .container{
+                background-image: linear-gradient(to right, #114e1f, #0a912f);
+            }
+            .divvi{
+                background-color: #4f534f;
+                border: #3f433f solid 3px;
+                border-radius: 2.5%;
+                box-shadow: -4px 4px 4px #000000;
+                height: auto;
+                width: 400px;
+                position: absolute;
+                left: 17.5%;
+                top: 2%;
+                padding: 25px;
+            }
+            table{
+                margin-left: 20%;
+                margin-right: 20%;
+                text-align: left;
+            }
+            img.class1{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body class="container">
+        <div class="divvi">
+            <table>
+                <tr>
+                    <td>
+                        <img class="class1" src="{{ url_for('static', filename='images/' + image_filename) }}" alt="My Image">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">
+                        <p>Login: {{ login }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Email: {{ user['email'] }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>First name: {{ user['first_name'] }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Last name: {{ user['last_name'] }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Birthday: {{ user['birthday'] }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Gender: {{ user['gender'] }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Date of registration: {{ user['reg_date'] }}</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+   </body>
+</html>

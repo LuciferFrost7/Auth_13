@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <style>
+        table.clss tr td{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        table.clss tr td.clss2{
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div style="border: 1px solid black; width: 24%; height: auto; position: absolute; left: 38%;top:5%;border-radius: 2.5%">
+        <form method="POST" action="/registration">
+                <table align="center" style="margin: 20px 56px;" class="clss">
+                    <thead align="center">
+                        <tr>
+                            <td colspan="2" style="padding-bottom: 15px;">
+                                Registration form
+                            </td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <label for="LOGIN">
+                            <td>
+                                Login:
+                            </td>
+                            <td>
+                                <input type="text" name="login" id="LOGIN" placeholder="Enter your login" required>
+                            </td>
+                        </label>
+                    </tr>
+                    <tr>
+                        <label for="EMAIL">
+                            <td>
+                                Email:
+                            </td>
+                            <td>
+                                <input type="email" name="email" id="EMAIL" placeholder="Example@gmail.com" required>
+                            </td>
+                    </label>
+                    </tr>
+                    <tr>
+                        <label for="PASSWORD">
+                            <td>
+                                Password:
+                            </td>
+                            <td>
+                                <input type="password" id="PASSWORD" name="password" required placeholder="password">
+                            </td>
+                        </label>
+                    </tr>
+                    <tr>
+                        <label for="PASSWORD_REPEAT">
+                            <td>
+                                Repeat password:
+                            </td>
+                            <td class="clss2">
+                                <input type="password" name="password_repeat" id="PASSWORD_REPEAT" required
+                                       placeholder="password">
+                            </td>
+                        </label>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding-top: 15px;">
+                            <input type="submit" value="Register">
+                        </td>
+                    <tr>
+                </table>
+        </form>
+        <div align="center" style="margin: 10px;">
+            <a href="login">Login</a>
+        </div>
+    </div>
+</body>
+</html>

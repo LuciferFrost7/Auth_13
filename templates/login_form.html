@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+</head>
+<body>
+    <div style="border: 1px solid black; width: 24%; height: auto; position: absolute; left: 38%;top:5%;border-radius: 2.5%">
+        <form method="POST" action="/login">
+                <table align="center" style="margin: 20px 56px;">
+                    <thead align="center">
+                        <tr>
+                            <td colspan="2" style="padding-bottom: 15px;">
+                                Login form
+                            </td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <label for="LOGIN">
+                            <td>
+                                Login:
+                            </td>
+                            <td>
+                                <input type="text" name="login" id="LOGIN" placeholder="Enter your login">
+                            </td>
+                        </label>
+                    </tr>
+                    <tr>
+                        <label for="PASSWORD">
+                            <td>
+                                Password:
+                            </td>
+                            <td>
+                                <input type="password" id="PASSWORD" name="password" required placeholder="password">
+                            </td>
+                        </label>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding-top: 15px;">
+                            <input type="submit" value="Login">
+                        </td>
+                    <tr>
+                </table>
+        </form>
+        <div align="center" style="margin: 10px;">
+            <a href="registration">Registration</a>
+        </div>
+    </div>
+
+</body>
+</html>
